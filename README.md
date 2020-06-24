@@ -1,2 +1,2 @@
 # node-recursive-directory
-Npp package to get directory files recursively
+Npm package to get directory files recursively
