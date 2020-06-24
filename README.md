@@ -26,9 +26,9 @@ const getFiles = require('node-resursive-directory');
 })
 ```
 
-You will get something like than:
+You will get something like that:
 
-```json
+```js
   [
       ...,
       {
