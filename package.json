@@ -1,6 +1,6 @@
 {
   "name": "node-recursive-directory",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Npm package to get directory files recursively",
   "main": "index.js",
   "repository": {
