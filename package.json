@@ -1,0 +1,19 @@
+{
+  "name": "node-recursive-directory",
+  "version": "1.0.0",
+  "description": "Npm package to get directory files recursively",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvmspace/node-recursive-directory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vvmspace/node-recursive-directory/issues"
+  },
+  "homepage": "https://github.com/vvmspace/node-recursive-directory#readme"
+}
