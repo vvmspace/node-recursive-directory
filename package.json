@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vvmspace/node-recursive-directory/issues"
   },
-  "homepage": "https://github.com/vvmspace/node-recursive-directory#readme"
+  "homepage": "https://github.com/vvmspace/node-recursive-directory#readme",
+  "dependencies": {
+    "glob": "^7.1.6"
+  }
 }
