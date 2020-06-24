@@ -1,8 +1,9 @@
-var glob = require("glob")
+var glob = require("glob");
+var path = require('path');
 
 function globPromise (dir, asObject = false) {
     return new Promise ((resolve, reject) => {
-        glob(`${dir}/**/*`, {strict: false, silent: true, nodir: true}, (err, files) => {
+        glob(path.resolve(`${dir}/**/*`), {strict: false, silent: true, nodir: true}, (err, files) => {
             if (err) {
                 reject(err);
             } else {
