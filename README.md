@@ -16,15 +16,15 @@ Imagine a tool so intuitive, yet powerful, that it transforms the way you handle
 
 Get started in seconds. Install via npm:
 
-\`\`\`bash
+```bash
 npm install node-recursive-directory
-\`\`\`
+```
 
 Or yarn:
 
-\`\`\`bash
+```bash
 yarn add node-recursive-directory
-\`\`\`
+```
 
 ## Usage
 
@@ -32,28 +32,28 @@ yarn add node-recursive-directory
 
 #### Using Promises
 
-\`\`\`javascript
-const scanDirectory = require('node-recursive-directory');
+```javascript
+const scanDirectory = require("node-recursive-directory");
 
-scanDirectory('./path/to/dir')
-.then(files => console.log(files))
-.catch(err => console.error(err));
-\`\`\`
+scanDirectory("./path/to/dir")
+    .then((files) => console.log(files))
+    .catch((err) => console.error(err));
+```
 
 #### Using async/await
 
-\`\`\`javascript
-const scanDirectory = require('node-recursive-directory');
+```javascript
+const scanDirectory = require("node-recursive-directory");
 
 (async () => {
-try {
-const files = await scanDirectory('./path/to/dir');
-console.log(files);
-} catch (err) {
-console.error(err);
-}
+    try {
+        const files = await scanDirectory("./path/to/dir");
+        console.log(files);
+    } catch (err) {
+        console.error(err);
+    }
 })();
-\`\`\`
+```
 
 ### Detailed File Information
 
@@ -61,46 +61,48 @@ Need more than just file paths? Get detailed file info with a simple switch.
 
 #### Using Promises
 
-\`\`\`javascript
-const scanDirectory = require('node-recursive-directory');
+```javascript
+const scanDirectory = require("node-recursive-directory");
 
-scanDirectory('./path/to/dir', true)
-.then(filesObject => console.log(filesObject))
-.catch(err => console.error(err));
-\`\`\`
+scanDirectory("./path/to/dir", true)
+    .then((filesObject) => console.log(filesObject))
+    .catch((err) => console.error(err));
+```
 
 #### Using async/await
 
-\`\`\`javascript
-const scanDirectory = require('node-recursive-directory');
+```javascript
+const scanDirectory = require("node-recursive-directory");
 
 (async () => {
-try {
-const filesObject = await scanDirectory('./path/to/dir', true);
-console.log(filesObject);
-} catch (err) {
-console.error(err);
-}
+    try {
+        const filesObject = await scanDirectory("./path/to/dir", true);
+        console.log(filesObject);
+    } catch (err) {
+        console.error(err);
+    }
 })();
-\`\`\`
+```
 
 ## Example
 
-\`\`\`javascript
-const scanDirectory = require('node-recursive-directory');
+```javascript
+const scanDirectory = require("node-recursive-directory");
 
 // Example: Get detailed file information
 (async () => {
-try {
-const filesObject = await scanDirectory('./my-project', true);
-filesObject.forEach(file => {
-console.log(\`Found file: \${file.filename} in directory: \${file.dirname}\`);
-});
-} catch (err) {
-console.error('Error:', err);
-}
+    try {
+        const filesObject = await scanDirectory("./my-project", true);
+        filesObject.forEach((file) => {
+            console.log(
+                `Found file: \${file.filename} in directory: \${file.dirname}`
+            );
+        });
+    } catch (err) {
+        console.error("Error:", err);
+    }
 })();
-\`\`\`
+```
 
 ## Join Our Growing Community
 
